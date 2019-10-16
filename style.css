@@ -1,0 +1,305 @@
+/* Variables */
+:root {
+    --yellow: #ffe260;
+    --lightyellow: #ffe989;
+    --pink: #ff4282;
+    --vio: #c0378f;
+    --redrose: #E83A31;
+    --orange: #FF5D36;
+    --black: #181818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+body .container {
+    margin: 0 auto;
+    width: 960px;
+    height: auto;
+    background-color: var(--yellow);
+}
+
+/* header and glass*/
+.header {
+    width: 100%;
+    height: 180px;
+    background-image: url(img/brandner640.jpg);
+    background-position: center;
+    background-size: 400px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    font-family: 'Coiny', cursive;
+    color: white;
+    font-size: 46px;
+    letter-spacing: 1px;
+    z-index: 10px;
+}
+
+
+/* content */
+
+.content {
+    display: flex;
+    /* display: grid;
+    grid-template-areas:
+    'box2 box3 box3 '; */
+    grid-auto-rows: minmax(100px, auto);
+    font-family: 'Overpass', sans-serif;
+}
+/* box profile */
+
+.box2 {
+    grid-area: box2;
+    width: 520px;
+    padding: 1em ;
+
+}
+    /* profile */
+.img-profile {
+    text-align: center;
+}
+
+.img-profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+    /* about me */
+
+.aboutme {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.aboutme h2 {
+    padding: 10px 20px 10px 20px;
+    color: var(--pink);
+}
+
+.aboutme p {
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    color: var(--black);
+}
+
+    /* contact */
+
+.contact {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.contact h2 {
+    padding: 10px 20px 10px 20px;
+    color: var(--pink);
+}
+
+.contact .con-info {
+    padding: 10px 20px 10px 20px;
+}
+
+.con-info p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--black);
+}
+.con-info p i {
+    padding-right: 10px;
+    color: var(--pink);
+}
+
+/* personal info */
+
+.personal-data {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.personal-data h2 {
+    padding: 10px 20px 10px 20px;
+    color: var(--pink);
+}
+
+.personal-data .pers-info {
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+tr td {
+    color: var(--black);
+}
+tr .data {
+    padding-left: 10px;
+    color: var(--black);
+}
+
+/* box general */
+.box3 {
+    grid-area: box3;
+    padding: 1em;
+    /* background-color: var(--lightyellow); */
+    margin-right: 1em;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+
+.head-box {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.sty-icon {
+    padding: 8px;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+}
+
+
+    /* vertical line */
+
+.box-info {
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.box-info ul li{
+    position: relative;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.box-info ul li:first-of-type::before{
+    width: 10px;
+    height: 10px;
+    left: 1px;
+}
+
+.box-info ul li:last-of-type{
+    padding-bottom: 3px;
+}
+.box-info ul li::before,
+.box-info ul li::after{
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.box-info ul li::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    background: var(--vio);
+    border-radius: 50%;
+    left: 1px;
+    z-index: 1;
+}
+
+.box-info ul li::after {
+    width: 3px;
+    height: 100%;
+    background: white;
+    left: 5px;
+    top: 0;
+}
+
+
+/* education sec */
+.edu {
+    width: 100%;
+    height: 270px;
+    background-color: var(--lightyellow);
+    border-radius: 20px;
+}
+
+.edu h1{
+    color: var(--pink);
+}
+
+.edu h1 i {
+
+}
+
+.edu h1 span {
+
+}
+
+.box-info small {
+    opacity: 0.7;
+}
+/* experience */
+
+.exp {
+    margin-top: 35px;
+    width: 100%;
+    height: 270px;
+    background-color: var(--lightyellow);
+    border-radius: 20px;
+}
+
+.exp h1{
+    color: var(--pink)
+}
+
+.exp h1 i {
+
+}
+
+.exp h1 span {
+
+}
+
+.exp h1 small {
+
+}
+
+/* skill */
+
+.skill {
+    margin-top: 35px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: auto;
+    background-color: var(--lightyellow);
+    border-radius: 20px;
+
+}
+
+.skill h1{
+    color: var(--pink)
+}
+
+.skill h1 i {
+
+}
+
+.skill h1 span {
+
+}
+
+.skill h1 small {
+
+}
