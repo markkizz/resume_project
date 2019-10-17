@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+body {
+    transition: all 0.3s ease 0.1s;
+}
+
 body .container {
     margin: 0 auto;
     width: 960px;
@@ -235,14 +239,6 @@ ul {
     color: var(--pink);
 }
 
-.edu h1 i {
-
-}
-
-.edu h1 span {
-
-}
-
 .box-info small {
     opacity: 0.7;
 }
@@ -260,18 +256,6 @@ ul {
     color: var(--pink)
 }
 
-.exp h1 i {
-
-}
-
-.exp h1 span {
-
-}
-
-.exp h1 small {
-
-}
-
 /* skill */
 
 .skill {
@@ -284,22 +268,71 @@ ul {
 
 }
 
+.skill-info {
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.skill-info ul li{
+    position: relative;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
 .skill h1{
     color: var(--pink)
 }
 
-.skill h1 i {
+.item i {
+    position: absolute;
+    font-size: 18px;
+    right: 30px;
+    top:3px;
+    cursor: pointer;
+}
+
+.item i:hover {
+    color: red;
+}
+
+
+/* input section */
+
+.add-skill {
+    width: 100%;
+    position: relative;
+    left: 8px;
+    margin-top: 20px;
+}
+
+.add-skill i{
+    position: relative;
+    line-height: 20px;
+    font-size: 30px;
+    color: #4162f6;
+    cursor: pointer;
+    transition: all 0.3s ease 0.05s;
+}
+
+.add-skill i:hover {
+    color: #47ef72;
+    font-size: 34px;
 
 }
 
-.skill h1 span {
-
+.add-skill input {
+    position: absolute;
+    left: 35px;
+    bottom: 0px;
+    height: 32px;
+    width: calc(100% - 280px);
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding-left:10px;
 }
-
-.skill h1 small {
-
-}
-
 
 /* media query */
 
@@ -413,7 +446,7 @@ ul {
         left: 40px;
     }
 
-    ul li > span{
+    ul li {
         font-size: 16px;
     }
     .edu {

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 </head>
 
-<body>
+<body id="random-bg">
     <div class="container">
         <div class="header">
             <span id="name">Kittayot Pattanapara (mark)</span>
@@ -75,14 +75,29 @@
                 </div>
                 <div class="skill head-box">
                     <h1><span class="sty-icon"><i class="fas fa-pencil-ruler"></i></span><span>skill</span></h1>
-                    <div class="box-info ">
-                        <ul>
-                            <li><span>C Programming langauge</span></li>
-                            <li><span>Python</span></li>
-                            <li><span>HTML</span></li>
-                            <li><span>CSS</span></li>
-                            <li><span>Javascript</span></li>
+                    <div class="skill-info ">
+                        <ul id="list">
+                            <li class="item">
+                                <p class="text">C Programming langauge</p>
+                                <i class="far fa-times-circle delete-btn" func="delete"></i>
+                            </li>
+                            <li class="item">
+                                <p class="text">Python</p>
+                                <i class="far fa-times-circle delete-btn" func="delete"></i>
+                            </li>
+                            <li class="item">
+                                <p class="text">HTML CSS</p>
+                                <i class="far fa-times-circle delete-btn" func="delete"></i>
+                            </li>
+                            <li class="item">
+                                <p class="text">Javascipt</p>
+                                <i class="far fa-times-circle delete-btn" func="delete"></i>
+                            </li>
                         </ul>
+                    </div>
+                    <div class="add-skill">
+                        <i class="fas fa-plus-circle" id="btn-add"></i>
+                        <input type="text" id="input" placeholder="type to add skill">
                     </div>
                 </div>
             </div>
@@ -90,5 +105,4 @@
     </div>
     <script src="scripts.js"></script>
 </body>
-
 </html>
